@@ -7,6 +7,7 @@ import org.example.writer.json.JsonWriter;
 
 public class Application {
     public static void main(String[] args) {
+        System.out.println("Starting.....");
         Carlist carlist = new Carlist();
         carlist.listAllFiles("src/main/resources/input");
         CsvFilewriter csvFilewriter = new CsvFilewriter();
