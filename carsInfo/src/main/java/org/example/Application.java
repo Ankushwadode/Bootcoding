@@ -17,10 +17,4 @@ public class Application {
         fwJson.write(carlist.getAllCars(),"src/main/resources/output/Allcars.json");
 
     }
-
-
-
-
-
-
 }
