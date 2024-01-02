@@ -6,7 +6,7 @@ import com.itextpdf.text.pdf.PdfWriter;
 
 import java.io.*;
 
-public class PdfConvertor {
+public class PdfConvertorApp {
     public static void main(String[] args) {
         File Inputfile = new File("src/main/resources/output/Allcars.csv");
         File Outputfile = new File("src/main/resources/output/Allcars.pdf");
