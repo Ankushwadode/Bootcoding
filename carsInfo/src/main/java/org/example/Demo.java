@@ -1,7 +1,7 @@
 package org.example;
 
 public class Demo {
-    public demo(){
+    public void demo(){
         System.out.println("super conc");
     }
 }
