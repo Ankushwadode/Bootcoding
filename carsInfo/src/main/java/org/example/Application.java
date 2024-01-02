@@ -3,7 +3,7 @@ package org.example;
 import org.example.reader.file.listing.Carlist;
 import org.example.writer.IFileWriter;
 import org.example.writer.csv.CsvFilewriter;
-import org.example.writer.pdf.JsonWriter;
+import org.example.writer.json.JsonWriter;
 
 public class Application {
     public static void main(String[] args) {

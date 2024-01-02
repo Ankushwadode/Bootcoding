@@ -9,6 +9,9 @@ import java.io.*;
 
 public class pdfConvertors {
      public static void main(String[] args) {
+
+          System.out.println("stating.....");
+
           File Inputfile = new File("src/main/resources/output/Csvdata/house2bhk.csv");
           File Outputfile = new File("src/main/resources/output/Csvdata/house2bhk.pdf");
           try{
