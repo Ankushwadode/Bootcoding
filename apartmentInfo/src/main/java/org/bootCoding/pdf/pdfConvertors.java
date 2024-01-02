@@ -40,15 +40,15 @@ public class pdfConvertors {
                          pdfDoc.add(paragraph);
                     }
                     System.out.println("File converted to pdf.");
+                    fis.close();
+                    dis.close();
+                    Isr.close();
+                    breader.close();
                }else {
                     System.out.println("File dose not exist");
                }
                pdfDoc.close();
-          } catch (DocumentException e) {
-               throw new RuntimeException(e);
-          } catch (FileNotFoundException e) {
-               throw new RuntimeException(e);
-          } catch (IOException e) {
+          } catch (DocumentException | IOException e) {
                throw new RuntimeException(e);
           }
 
