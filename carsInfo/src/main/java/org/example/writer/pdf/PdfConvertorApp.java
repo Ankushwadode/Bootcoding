@@ -34,6 +34,7 @@ public class PdfConvertorApp {
                 BufferedReader breader = new BufferedReader(Isr);
                 String line;
                 while((line=breader.readLine()) != null){
+
                     Paragraph paragraph = new Paragraph(line+"\n",myfont);
                     paragraph.setAlignment(Element.ALIGN_JUSTIFIED);
                     pdfDoc.add(paragraph);

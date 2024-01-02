@@ -1,6 +1,7 @@
 package org.example;
 
 import org.example.reader.file.listing.Carlist;
+import org.example.utils.PdfTest;
 import org.example.writer.IFileWriter;
 import org.example.writer.csv.CsvFilewriter;
 import org.example.writer.json.JsonWriter;
@@ -16,6 +17,5 @@ public class Application {
         IFileWriter fwJson  = new JsonWriter();
 
         fwJson.write(carlist.getAllCars(),"src/main/resources/output/Allcars.json");
-
     }
 }
