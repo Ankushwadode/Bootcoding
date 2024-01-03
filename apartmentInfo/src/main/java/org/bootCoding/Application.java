@@ -17,7 +17,7 @@ public class Application {
         System.out.println("starting......");
 
         CsvFileReader csvFileReader = new CsvFileReader("D:\\workspace\\BootCoding\\apartmentInfo\\src\\main\\" +
-                "resources\\input\\housing_price_dataset.csv");
+        "resources\\input\\housing_price_dataset.csv");
 
         List<House> houses = csvFileReader.read();
 
