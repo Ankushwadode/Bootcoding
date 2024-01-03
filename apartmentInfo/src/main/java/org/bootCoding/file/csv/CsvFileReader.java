@@ -44,7 +44,8 @@ import java.util.List;
             }
             return houses;
         } catch (Exception e) {
-            throw  new RuntimeException();
+            e.printStackTrace();
         }
+        return null;
     }
 }

@@ -1,31 +1,17 @@
 package org.example.reader.file.listing;
 
 import org.example.model.Car;
+import org.example.pdf.PdfConvertor;
 import org.example.reader.file.csv.CsvFileReader;
 
 import java.io.File;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class Carlist {
     public List<Car> allCars = new ArrayList<>();
 
     public List<Car> getAllCars() {
         return allCars;
-    }
-
-    private void processData(File file){
-        System.out.println("Files: "+ file.getName());
-        String filePath = file.getPath();
-        System.out.println(filePath);
-
-
-        CsvFileReader csvFileReader = new CsvFileReader(filePath);
-        List data = csvFileReader.read();
-        Collections.sort(data);
-
-        allCars.addAll(data);
     }
 
     public void listAllFiles(String  path){
@@ -48,4 +34,17 @@ public class Carlist {
             ex.printStackTrace();
         }
     }
+
+    private void processData(File file){
+        System.out.println("Files: "+ file.getName());
+        String filePath = file.getPath();
+        System.out.println(filePath);
+
+        CsvFileReader csvFileReader = new CsvFileReader(filePath);
+        List data = csvFileReader.read();
+        Collections.sort(data);
+
+        allCars.addAll(data);
+    }
+
 }
