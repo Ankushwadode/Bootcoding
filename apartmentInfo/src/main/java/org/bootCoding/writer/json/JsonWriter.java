@@ -36,7 +36,7 @@ private ObjectMapper objectMapper = new ObjectMapper();
         try{
             ObjectMapper objmapper = new ObjectMapper();
             String lines = objmapper.writeValueAsString(result);
-            FileWriter fileWriter = new FileWriter(new File("src/main/resources/output/PdfData/BedroomNeighbourhoodMetric.json"));
+            FileWriter fileWriter = new FileWriter(new File("src/main/resources/output/Jsondata/BedroomNeighbourhoodMetric.json"));
             fileWriter.write(lines);
             fileWriter.flush();
         } catch (Exception e) {
