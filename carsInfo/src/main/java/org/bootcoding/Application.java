@@ -43,7 +43,7 @@ public class Application {
         System.out.println("..............................................................................");
 
         //reading the file
-        CsvFileReader csvFileReader = new CsvFileReader("src/main/resources/output/Allcars.csv");
+        CsvFileReader csvFileReader = new CsvFileReader("src/main/resources/output/Csv/Allcars.csv");
         List<Car> carsList = csvFileReader.read();
 
         //metric of car by transmission
