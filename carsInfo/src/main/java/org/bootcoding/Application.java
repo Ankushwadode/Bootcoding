@@ -25,15 +25,15 @@ public class Application {
 
 //        //csv writer object
         CsvFilewriter csvFilewriter = new CsvFilewriter();
-        csvFilewriter.write(carlist.getAllCars(),"src/main/resources/output/Allcars.csv");
+        csvFilewriter.write(carlist.getAllCars(),"src/main/resources/output/Csv/Allcars.csv");
 
 //        //json writer object
         IFileWriter fwJson  = new JsonWriter();
-        fwJson.write(carlist.getAllCars(),"src/main/resources/output/Allcars.json");
+        fwJson.write(carlist.getAllCars(),"src/main/resources/output/Json/Allcars.json");
 
 //        //convert to pdf file
         PdfConvertor pdfConvertor = new PdfConvertor();
-        pdfConvertor.write(carlist.getAllCars(),"src/main/resources/output/AllCarsList.pdf");
+        pdfConvertor.write(carlist.getAllCars(),"src/main/resources/output/Pdf/AllCarsList.pdf");
 
         //findes the duplicate in a given file
         System.out.println("Duplicate data: ");
