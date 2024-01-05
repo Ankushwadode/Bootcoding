@@ -2,6 +2,7 @@ package org.bootcoding.utils;
 
 import org.apache.commons.lang3.StringUtils;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class DateUtils {
@@ -10,7 +11,11 @@ public class DateUtils {
         if (StringUtils.isEmpty(datestr) || StringUtils.containsIgnoreCase(datestr,"nan")){
             throw new Exception();
         }
-        return null;
+
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yy");
+        Date date = dateFormat.parse(datestr);
+        System.out.println(date);
+        return date;
     }
 
 }
