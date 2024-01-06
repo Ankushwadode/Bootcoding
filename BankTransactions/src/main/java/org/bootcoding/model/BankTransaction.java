@@ -14,12 +14,12 @@ public class BankTransaction {
     private char gender;
     private String location;
     private double accountBalance;
-    private  Date transactionDate;
+    private Date transactionDate;
     private long transactionTime;
     private double amountInr;
 
     @Override
-    public String toString(){
+    public String toString() {
         return
                 transactionId +
                         "," + customerId +

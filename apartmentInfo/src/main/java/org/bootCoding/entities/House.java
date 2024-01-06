@@ -5,7 +5,8 @@ import lombok.Data;
 
 @Data
 @Builder
-public class House implements Comparable{
+public class
+House implements Comparable{
     
      int squareFeet;
      int bedrooms;

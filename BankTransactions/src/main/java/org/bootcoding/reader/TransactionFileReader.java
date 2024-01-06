@@ -64,7 +64,7 @@ public class TransactionFileReader {
             try {
                 return buildTransaction(row);
             } catch (Exception e) {
-                System.out.println(e.getMessage()+"while processing : row "+row);
+//                System.out.println(e.getMessage()+"while processing : row "+row);
             }
             return null;
         }).filter(Objects::nonNull).collect(Collectors.toList());
