@@ -2,6 +2,7 @@ package org.bootcoding;
 
 import org.bootcoding.metrics.MetricCollector;
 import org.bootcoding.metrics.counter.TramsactionByCityMetric;
+import org.bootcoding.metrics.counter.TransactionByDateMetric;
 import org.bootcoding.metrics.counter.TransactionByGenderMetric;
 import org.bootcoding.model.BankTransaction;
 import org.bootcoding.reader.TransactionFileReader;
@@ -25,8 +26,11 @@ public class Application {
         MetricCollector metricCollector = new TransactionByGenderMetric();
         metricCollector.collect(transactions);
 
-        MetricCollector collector = new TramsactionByCityMetric();
-        collector.collect(transactions);
+        MetricCollector collectorCity = new TramsactionByCityMetric();
+        collectorCity.collect(transactions);
+
+        MetricCollector collectorDate = new TransactionByDateMetric();
+        collectorDate.collect(transactions);
 
     }
 }

@@ -13,6 +13,7 @@ public class TransactionByGenderMetric implements MetricCollector {
         Map<Character,List<BankTransaction>> genderGroup = transactions.stream()
                 .collect(Collectors.groupingBy(BankTransaction::getGender));
 
+        System.out.println("....................................................");
         System.out.println("Transaction by Male: "+genderGroup.get('M').size());
         System.out.println("Transaction by Female: "+genderGroup.get('F').size());
     }

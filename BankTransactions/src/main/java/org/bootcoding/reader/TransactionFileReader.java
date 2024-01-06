@@ -4,6 +4,7 @@ import com.opencsv.CSVReader;
 import com.opencsv.exceptions.CsvException;
 import org.apache.commons.lang3.StringUtils;
 import org.bootcoding.model.BankTransaction;
+import org.bootcoding.utils.DateUtils;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -11,6 +12,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.stream.Collectors;
 
 
@@ -58,10 +60,17 @@ public class TransactionFileReader {
     }
 
     private List<BankTransaction> convert(List<String[]> data) {
-        //return data.stream().map(row -> buildTransaction(row)).collect(Collectors.toList());
+        return data.stream().map(row -> {
+            try {
+                return buildTransaction(row);
+            } catch (Exception e) {
+                System.out.println(e.getMessage()+"while processing : row "+row);
+            }
+            return null;
+        }).filter(Objects::nonNull).collect(Collectors.toList());
 
         //this line can be written as above line
-        return data.stream().map(this::buildTransaction).collect(Collectors.toList());
+//        return data.stream().map(this::buildTransaction).collect(Collectors.toList());
     }
 
 //    private void printArray(String[] data){
@@ -70,16 +79,16 @@ public class TransactionFileReader {
 //        }
 //        System.out.println();
 //    }
-    private BankTransaction buildTransaction(String[] row) {
+    private BankTransaction buildTransaction(String[] row) throws Exception {
 //        printArray(row);
         return BankTransaction.builder()
                 .transactionId(row[0])
                 .customerId(row[1])
-                .customerDob(row[2])
+                .customerDob(DateUtils.convertToDate(row[2]))
                 .gender(StringUtils.isEmpty(row[3]) ? 'N' : row[3].charAt(0))
                 .location(row[4])
                 .accountBalance(StringUtils.isEmpty(row[5]) ? 0 : Double.valueOf(row[5]))
-                .transactionDate(row[6])
+                .transactionDate(DateUtils.convertToDate(row[6]))
                 .transactionTime(StringUtils.isEmpty(row[7]) ? 0 : Long.valueOf(row[7]))
                 .amountInr(StringUtils.isEmpty(row[8]) ? 0 : Double.valueOf(row[8]))
                 .build();
