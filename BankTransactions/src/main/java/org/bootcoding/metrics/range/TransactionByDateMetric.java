@@ -16,8 +16,8 @@ public class TransactionByDateMetric implements MetricCollectorByDate {
                 transactionList.add(transaction);
             }
         }
-        System.out.println("....................................................");
-        System.out.println("Year between 1960 to 1970 transaction count is: "+ transactionList.size());
+        System.out.println("..........................................................");
+        System.out.println("Year between "+startYear+"'s to "+endYear+"'s transaction count is: "+ transactionList.size());
     }
     private boolean isWithRange(Date date , int startYear, int endYear)
     {

@@ -30,6 +30,7 @@ public class Application {
 
         TransactionByDateMetric transactionByDateMetric = new TransactionByDateMetric();
         transactionByDateMetric.collect(transactions,60,70);
-
+        transactionByDateMetric.collect(transactions,70,80);
+        transactionByDateMetric.collect(transactions,80,90);
     }
 }

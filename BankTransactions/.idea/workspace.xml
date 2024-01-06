@@ -5,17 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a7820c9-4e2a-4014-8f06-0fae61f0ec17" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/bootcoding/metrics/MetricCollectorByDate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/bootcoding/metrics/range/TransactionByDateMetric.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/bootcoding/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bootcoding/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bootcoding/Exception/InvalidDateException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bootcoding/Exception/InvalidDateException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bootcoding/metrics/counter/TransactionByDateMetric.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bootcoding/model/BankTransaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bootcoding/model/BankTransaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bootcoding/range/YearRangeData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bootcoding/reader/TransactionFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bootcoding/reader/TransactionFileReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bootcoding/utils/DateUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bootcoding/utils/DateUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../apartmentInfo/src/main/java/org/bootCoding/entities/House.java" beforeDir="false" afterPath="$PROJECT_DIR$/../apartmentInfo/src/main/java/org/bootCoding/entities/House.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/bootcoding/metrics/range/TransactionByDateMetric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bootcoding/metrics/range/TransactionByDateMetric.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,20 +33,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/workspace/Bootcoding/BankTransactions/src/main/resources&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/workspace/Bootcoding/BankTransactions/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.editor",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\workspace\Bootcoding\BankTransactions\src\main\resources" />
@@ -95,7 +88,7 @@
       <workItem from="1704386033358" duration="4134000" />
       <workItem from="1704434172027" duration="41000" />
       <workItem from="1704434233878" duration="463000" />
-      <workItem from="1704435438377" duration="37365000" />
+      <workItem from="1704435438377" duration="38363000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <option name="closed" value="true" />
