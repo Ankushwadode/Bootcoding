@@ -27,7 +27,7 @@ public class StudentRepo {
         System.out.println("rows/affected: "+updatedRows);
     }
 
-    public List<Student> findALl(){
+    public List<Student> findAll(){
         String sql = "SELECT * FROM student";
         List<Student> studentList = template.query(sql, (rs,row) -> {
             Student student = new Student();

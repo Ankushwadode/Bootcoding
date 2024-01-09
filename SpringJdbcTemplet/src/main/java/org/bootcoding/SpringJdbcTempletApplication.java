@@ -22,7 +22,7 @@ public class SpringJdbcTempletApplication {
 		StudentRepo studentRepo = context.getBean(StudentRepo.class);
 		studentRepo.save(student);
 
-		System.out.println(studentRepo.findALl());
+		System.out.println(studentRepo.findAll());
 	}
 
 }
