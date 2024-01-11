@@ -13,9 +13,8 @@ git clone https://github.com/Ankushwadode/Bootcoding.git
 
 ## Usage
 
-```
 The Repository contains 6 different code files.
 Look for Apartment Info code which implements solid principles
-with generics in Java.
-```
+with generics in Java. 
+
 ## Keep Coding...
