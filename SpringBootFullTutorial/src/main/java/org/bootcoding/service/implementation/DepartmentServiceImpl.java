@@ -1,5 +1,6 @@
 package org.bootcoding.service.implementation;
 
+import org.bootcoding.customException.DepartmentNotFoundException;
 import org.bootcoding.entity.Department;
 import org.bootcoding.repository.DepartmentRepository;
 import org.bootcoding.service.DeparmentService;
@@ -28,12 +29,29 @@ public class DepartmentServiceImpl implements DeparmentService {
 
     @Override
     public Department getDepartmetnById(Long departmentId) {
-        return departmentRepository.findById(departmentId).get();
+        Optional<Department> department = departmentRepository.findById(departmentId);
+        if (!department.isPresent()){
+            try {
+                throw new DepartmentNotFoundException("Department with "+departmentId+" is not Present.");
+            } catch (DepartmentNotFoundException e) {
+                throw new RuntimeException(e);
+            }
+        }
+        return department.get();
     }
 
     @Override
     public void deleteDepatmentById(Long departmentId) {
-        departmentRepository.deleteById(departmentId);
+        Optional<Department> id = departmentRepository.findById(departmentId);
+        if (!id.isPresent()) {
+            try{
+                throw new DepartmentNotFoundException("Department cannot be deleted with Id "+departmentId+" because it's not Present.");
+            } catch (DepartmentNotFoundException e) {
+                throw new RuntimeException(e);
+            }
+        } else {
+            departmentRepository.deleteById(departmentId);
+        }
     }
 
     @Override
