@@ -1,0 +1,3 @@
+DROP TABLE IF EXISTS "widgets";
+
+DROP SEQUENCE IF EXISTS widgets_id_seq;
