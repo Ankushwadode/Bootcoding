@@ -11,22 +11,9 @@ import javax.sql.DataSource;
 
 @SpringBootApplication
 @Log
-public class SpringBootTutorial2Application implements CommandLineRunner {
-
-	private final DataSource dataSource;
-
-	public SpringBootTutorial2Application(final DataSource dataSource) {
-		this.dataSource = dataSource;
-	}
+public class SpringBootTutorial2Application{
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBootTutorial2Application.class, args);
-	}
-
-	@Override
-	public void run(String... args) throws Exception {
-		log.info("DataSource" + dataSource.toString());
-		final JdbcTemplate template = new JdbcTemplate(dataSource);
-		template.execute("select 1");
 	}
 }
