@@ -4,6 +4,9 @@ server:
 spring:
   profiles:
     active: dev
+  sql:
+    init:
+      mode: always
   datasource:
     url: jdbc:postgresql://localhost:5432/postgres
     username: postgres
